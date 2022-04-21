@@ -1,0 +1,50 @@
+{
+  "name": "portfolio-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "build-storybook": "build-storybook -s public",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@prismicio/client": "^6.4.3",
+    "@prismicio/helpers": "^2.3.0",
+    "@prismicio/next": "^0.1.2",
+    "@prismicio/react": "^2.3.0",
+    "@swc/core": "^1.2.170",
+    "@swc/jest": "^0.2.20",
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.10",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^14.1.1",
+    "@types/jest": "^27.4.1",
+    "@types/node": "17.0.25",
+    "@types/react": "18.0.5",
+    "@types/react-dom": "18.0.1",
+    "babel-loader": "^8.2.5",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5",
+    "eslint-plugin-storybook": "^0.5.11",
+    "jest": "^27.5.1",
+    "ts-node": "^10.7.0",
+    "typescript": "4.6.3"
+  }
+}
