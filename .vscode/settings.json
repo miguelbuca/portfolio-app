@@ -13,5 +13,6 @@
         "**/.slicemachine": true,
         "**/customtypes": true,
         "**/slices": true,
+        "**/coverage": true,
     }
 }

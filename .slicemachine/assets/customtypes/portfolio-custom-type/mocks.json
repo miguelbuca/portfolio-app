@@ -1,9 +1,9 @@
 {
-  "id": "dbfd153c-6460-4347-a24f-648f28b3f7ed",
-  "uid": "amet-ut-beatae",
+  "id": "c3a01af1-0db5-4d81-9034-a250aa6c102e",
+  "uid": "ut-consequatur-iusto",
   "type": "portfolio-custom-type",
   "data": {
-    "appName": "implement extensible channels",
+    "appName": "brand proactive architectures",
     "favicon": {
       "dimensions": {
         "width": 900,
@@ -14,12 +14,21 @@
       "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
     },
     "address": {
-      "latitude": 48.8606111,
-      "longitude": 2.337644
+      "latitude": 48.8703712,
+      "longitude": 2.3865198
+    },
+    "userPhoto": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
     },
     "url": {
       "link_type": "Web",
-      "url": "https://slicemachine.dev"
+      "url": "http://google.com"
     },
     "image": {
       "dimensions": {
@@ -28,15 +37,15 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
     },
     "description": [
       {
         "type": "paragraph",
-        "text": "Officia cillum quis culpa sint amet non dolor pariatur exercitation labore eu aliquip elit proident et.",
+        "text": "Ad pariatur laboris deserunt ad nulla eiusmod. Voluptate nisi nostrud ipsum velit excepteur sunt ut labore est veniam tempor proident esse consequat.",
         "spans": []
       }
     ],
-    "createdAt": "2020-12-27"
+    "createdAt": "2013-07-11"
   }
 }

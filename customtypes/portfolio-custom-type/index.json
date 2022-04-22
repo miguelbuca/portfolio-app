@@ -25,6 +25,14 @@
         "config": {
           "label": "Address"
         }
+      },
+      "userPhoto": {
+        "type": "Image",
+        "config": {
+          "label": "User Photo",
+          "constraint": {},
+          "thumbnails": []
+        }
       }
     },
     "project": {
