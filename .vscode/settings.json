@@ -10,5 +10,8 @@
         "**/.storybook": true,
         "**/.vscode": true,
         "**/.next": true,
+        "**/.slicemachine": true,
+        "**/customtypes": true,
+        "**/slices": true,
     }
 }

@@ -1,0 +1,42 @@
+{
+  "id": "dbfd153c-6460-4347-a24f-648f28b3f7ed",
+  "uid": "amet-ut-beatae",
+  "type": "portfolio-custom-type",
+  "data": {
+    "appName": "implement extensible channels",
+    "favicon": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+    },
+    "address": {
+      "latitude": 48.8606111,
+      "longitude": 2.337644
+    },
+    "url": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Officia cillum quis culpa sint amet non dolor pariatur exercitation labore eu aliquip elit proident et.",
+        "spans": []
+      }
+    ],
+    "createdAt": "2020-12-27"
+  }
+}

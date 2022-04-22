@@ -1,5 +1,6 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
+import prismicClient from '../src/services/prismic';
 
 const Home: NextPage = () => {
   return (
@@ -11,10 +12,25 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        test
+        <h1 className="text-3xl font-bold underline text-blue-500">Hello world!</h1>
       </main>
     </div>
-  )
+  );
 }
 
 export default Home
+
+export const getStaticProps: GetStaticProps = async () => {
+
+  /*const projectResponse = await prismic.query(
+    [prismic.predicate.at("document.type", "portfolio-custom-type")],
+    { orderings: "[document.createdAt desc]" }
+  );*/
+
+  console.log(await prismicClient().getByType("portfolio-custom-type"));
+
+  return {
+    props: {},
+    revalidate: 86400,
+  };
+};
