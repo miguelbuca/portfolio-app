@@ -12,5 +12,11 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("child", "& > *");
+      addVariant("child-no-last", "& > *:not(:last-child)");
+      addVariant("child-hover", "& > *:hover");
+    },
+  ],
 };

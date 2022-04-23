@@ -26,14 +26,19 @@ const Header: NextPage = ({}) => {
         </Link>
       </div>
       <div className="flex flex-1 flex-row items-center justify-end text-sm capitalize">
-        <Link href={"/"}>
+        <Link href={"#skills"}>
           <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
-            projects
+            skills
+          </a>
+        </Link>
+        <Link href={"#skills"}>
+          <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
+            worked
           </a>
         </Link>
         <Link href={"/"}>
           <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
-            skill
+            projects
           </a>
         </Link>
         <Link href={"/"}>

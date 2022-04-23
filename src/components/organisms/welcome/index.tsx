@@ -12,7 +12,9 @@ const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
     <div className="h-[calc(100vh-6rem)] mb-[1rem] grid grid-cols-2">
       <div className="flex items-center">
         <div className="flex flex-col">
-          <h1 className="text-[48pt]">Welcome!</h1>
+          <h1 data-testid='welcome-title' className="text-[48pt]">
+            Welcome!
+          </h1>
           <h4>
             Over the past{" "}
             <span className="p-[.1rem_.5rem] mx-1 bg-[rgba(255,255,255,.06)]">
@@ -28,9 +30,9 @@ const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
           </div>
         </div>
       </div>
-      <div className='relative flex justify-end items-center'>
-        <div className='w-[60%]'>
-          <UserPhoto url={url}/>
+      <div className="relative flex justify-end items-center">
+        <div className="w-[60%]">
+          <UserPhoto url={url} />
         </div>
       </div>
     </div>

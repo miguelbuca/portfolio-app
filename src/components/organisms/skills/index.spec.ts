@@ -1,4 +1,4 @@
-import Welcome from "./";
+import Welcome from ".";
 
 describe('Welcome component', () => {
     it('should be render',()=>{
