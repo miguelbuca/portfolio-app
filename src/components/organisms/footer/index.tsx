@@ -1,14 +1,6 @@
 import { NextPage } from "next";
-import Link from "next/link";
 
-interface Props {}
-
-interface Anchor {
-  name: string;
-  link: string;
-}
-
-const Footer: NextPage<Props> = ({ ...props }) => {
+const Footer: NextPage = () => {
 
   const social: Anchor[] = [
     {
