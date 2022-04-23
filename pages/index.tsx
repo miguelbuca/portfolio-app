@@ -1,5 +1,5 @@
 import type { GetStaticProps, NextPage } from 'next'
-import Skills from '../src/components/organisms/skills';
+import Skills from '../src/components/organisms/welcome copy';
 import Welcome from '../src/components/organisms/welcome';
 import Main from '../src/components/templates/main';
 import prismicClient from '../src/services/prismic';
