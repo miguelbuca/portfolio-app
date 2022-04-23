@@ -41,7 +41,7 @@ const Header: NextPage = ({}) => {
             projects
           </a>
         </Link>
-        <Link href={"/"}>
+        <Link href={"#about"}>
           <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
             about
           </a>

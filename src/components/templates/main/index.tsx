@@ -1,6 +1,7 @@
 import { NextPage } from 'next'
 import Head from 'next/head';
 import { HTMLAttributes } from 'react';
+import Footer from '../../organisms/footer';
 import Header from '../../organisms/header';
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
@@ -16,6 +17,7 @@ const Main: NextPage<Props> = ({ children }) => {
       <main className="fixed overflow-y-auto scroll-smooth left-0 top-0 h-full w-full bg-[#141414] text-white">
         <Header />
         <div className="container md:container md:mx-auto">{children}</div>
+        <Footer />
       </main>
     </>
   );
