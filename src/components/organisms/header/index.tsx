@@ -74,7 +74,7 @@ const Header: NextPage<Props> = ({ variant }) => {
         </div>
       </header>
       {variant == "iframe" && (
-        <button className="fixed right-[2rem] bottom-0 p-[.5rem_1rem] bg-[rgba(0,0,0,.5)] rounded-t-md">
+        <header className="fixed right-[2rem] bottom-0 p-[.5rem_1rem] bg-[rgba(0,0,0,.5)] rounded-t-md">
           <Link href={"/"}>
             <a className="flex flex-row items-center">
               <svg
@@ -96,7 +96,7 @@ const Header: NextPage<Props> = ({ variant }) => {
               </span>
             </a>
           </Link>
-        </button>
+        </header>
       )}
     </>
   );
