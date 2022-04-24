@@ -1,9 +1,8 @@
-import { NextPage } from 'next'
+import { NextPage } from "next";
+import Frame from "../../src/components/templates/frame";
 
 const Project: NextPage = () => {
-  return (
-    <div>Project</div>
-  )
-}
+  return <Frame url="https://spider-v01.netlify.app/" />;
+};
 
-export default Project
+export default Project;
