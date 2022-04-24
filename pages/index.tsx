@@ -1,6 +1,7 @@
 import type { GetStaticProps, NextPage } from 'next'
 import Skills from '../src/components/organisms/skills';
 import Welcome from '../src/components/organisms/welcome';
+import Worked from '../src/components/organisms/worked';
 import Main from '../src/components/templates/main';
 import prismicClient from '../src/services/prismic';
 
@@ -9,6 +10,7 @@ const Home: NextPage<any> = ({ ...props }) => {
     <Main>
         <Welcome userPhoto={props.app[0]?.data?.userPhoto} />
         <Skills />
+        <Worked/>
     </Main>
   );
 }

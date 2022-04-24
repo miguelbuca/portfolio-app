@@ -31,7 +31,7 @@ const Header: NextPage = ({}) => {
             skills
           </a>
         </Link>
-        <Link href={"#skills"}>
+        <Link href={"#worked"}>
           <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
             worked
           </a>
