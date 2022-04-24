@@ -13,6 +13,7 @@ interface Project extends Anchor {
   uuid?: string,
   description: string,
   figma?: string,
+  github?: string,
   website?: string,
   preview?: string
 }

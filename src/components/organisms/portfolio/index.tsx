@@ -8,6 +8,7 @@ const Portfolio: NextPage = () => {
       website: 'teta',
       name: "SNIR, SA.",
       link: "http://snir.co.ao/",
+      github: "http://snir.co.ao/",
       preview:
         "https://cdn.dribbble.com/users/501822/screenshots/5312532/media/999b45ba7e293832e32d9352f6750fa4.gif",
       description: "Banking and Insurance",
