@@ -24,7 +24,7 @@ const Worked: NextPage = () => {
       name: "Uteis & Razoaveis Lda",
       country: "Porto, Portugal",
       link: "https://www.uteiserazoaveis.com",
-      title: "Frontend Developer - Mobile",
+      title: "Frontend Developer",
       image:
         "https://media-exp1.licdn.com/dms/image/C4E0BAQH4oWxQIXR-Vw/company-logo_200_200/0/1529052075238?e=2147483647&v=beta&t=Fh6kE68kgBqNPiKnDp4mqvY1gQOXinjs50KGfr5EHQA",
       description: "IT and finance",

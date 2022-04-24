@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Link from "next/link";
 import { HTMLAttributes } from "react";
 
 export interface Details {
@@ -15,11 +16,7 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
   return variant === "Job" ? (
     <div {...args} className="flex flex-col justify-center items-center">
       <div className="mb-2">
-        <img
-          alt="cardPhoto"
-          src={details.job?.image}
-          className="h-[100px]"
-        />
+        <img alt="cardPhoto" src={details.job?.image} className="h-[100px]" />
       </div>
       <div className="flex flex-row">
         <strong className="mr-1">
@@ -58,6 +55,90 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
       </div>
     </div>
   ) : (
-    <div>ola</div>
+    <div className="flex-1 rounded-2xl bg-[rgba(255,255,255,.06)] flex flex-col p-[.3rem] min-h-[280px]">
+      <div className="flex-1 p-0 rounded-2xl cursor-pointer relative">
+        {details.project?.website ? (
+          <Link href={"/projects/" + details.project.uuid}>
+            <a>
+              <img
+                className="w-full h-full rounded-2xl"
+                src={details.project?.preview}
+                alt="preview"
+              />
+              <span className="absolute overflow-hidden flex flex-row items-center h-[30px] w-[30px] hover:transition-all hover:w-[70px] rounded-[4px] bg-white p-[.3rem_.5rem] text-[10pt] text-black top-[1rem] right-[1rem]">
+                <span>
+                  <svg
+                    className="fill-[rgba(0,0,0,.8)] mr-[.5rem]"
+                    width={15}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 122.6 122.88"
+                    x="0px"
+                    y="0px"
+                  >
+                    <g>
+                      <path d="M110.6,72.58c0-3.19,2.59-5.78,5.78-5.78c3.19,0,5.78,2.59,5.78,5.78v33.19c0,4.71-1.92,8.99-5.02,12.09 c-3.1,3.1-7.38,5.02-12.09,5.02H17.11c-4.71,0-8.99-1.92-12.09-5.02c-3.1-3.1-5.02-7.38-5.02-12.09V17.19 C0,12.48,1.92,8.2,5.02,5.1C8.12,2,12.4,0.08,17.11,0.08h32.98c3.19,0,5.78,2.59,5.78,5.78c0,3.19-2.59,5.78-5.78,5.78H17.11 c-1.52,0-2.9,0.63-3.91,1.63c-1.01,1.01-1.63,2.39-1.63,3.91v88.58c0,1.52,0.63,2.9,1.63,3.91c1.01,1.01,2.39,1.63,3.91,1.63h87.95 c1.52,0,2.9-0.63,3.91-1.63s1.63-2.39,1.63-3.91V72.58L110.6,72.58z M112.42,17.46L54.01,76.6c-2.23,2.27-5.89,2.3-8.16,0.07 c-2.27-2.23-2.3-5.89-0.07-8.16l56.16-56.87H78.56c-3.19,0-5.78-2.59-5.78-5.78c0-3.19,2.59-5.78,5.78-5.78h26.5 c5.12,0,11.72-0.87,15.65,3.1c2.48,2.51,1.93,22.52,1.61,34.11c-0.08,3-0.15,5.29-0.15,6.93c0,3.19-2.59,5.78-5.78,5.78 c-3.19,0-5.78-2.59-5.78-5.78c0-0.31,0.08-3.32,0.19-7.24C110.96,30.94,111.93,22.94,112.42,17.46L112.42,17.46z"></path>
+                    </g>
+                  </svg>
+                </span>
+                <span className="left-[-1rem] text-[rgba(0,0,0,.8)] capitalize">
+                  view
+                </span>
+              </span>
+            </a>
+          </Link>
+        ) : (
+          <>
+            <img
+              className="w-full h-full rounded-2xl"
+              src={details.project?.preview}
+              alt="preview"
+            />
+          </>
+        )}
+      </div>
+      <div className="flex p-[1rem] flex-row">
+        <div className="flex-1">
+          <strong className="mr-1">{details.project?.name}</strong>
+        </div>
+        <div>
+          {details.project?.figma && (
+            <a
+              target={"_blank"}
+              title="See UI/UX"
+              href={details.project.figma}
+              className="flex flex-row items-center underline"
+            >
+              <svg
+                className="ml-1"
+                height={20}
+                viewBox="0 0 200 300"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z"
+                  fill="#0acf83"
+                />
+                <path
+                  d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z"
+                  fill="#a259ff"
+                />
+                <path
+                  d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z"
+                  fill="#f24e1e"
+                />
+                <path
+                  d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50z"
+                  fill="#ff7262"
+                />
+                <path
+                  d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z"
+                  fill="#1abcfe"
+                />
+              </svg>
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
   );
 };

@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Link from 'next/link';
 import { Button } from '../../atoms/button';
 import { UserPhoto } from '../../molecules/userPhoto';
 
@@ -12,7 +11,7 @@ const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
     <div className="h-[calc(100vh-6rem)] mb-[1rem] grid grid-cols-2">
       <div className="flex items-center">
         <div className="flex flex-col">
-          <h1 data-testid='welcome-title' className="text-[48pt]">
+          <h1 data-testid="welcome-title" className="text-[48pt]">
             Welcome!
           </h1>
           <h4>
@@ -25,8 +24,8 @@ const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
             attract new customers.
           </h4>
           <div className="flex flex-row mt-5">
-            <Button className="mr-4">Download CV →</Button>
-            <Button variant="secondary">Get in touch →</Button>
+            <Button className="mr-4">Download CV &#8595;</Button>
+            <Button variant="secondary">Get in touch &#8594;</Button>
           </div>
         </div>
       </div>

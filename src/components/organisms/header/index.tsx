@@ -36,7 +36,7 @@ const Header: NextPage = ({}) => {
             worked
           </a>
         </Link>
-        <Link href={"/"}>
+        <Link href={"#projects"}>
           <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
             projects
           </a>

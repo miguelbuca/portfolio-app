@@ -10,5 +10,9 @@ interface Job extends Anchor {
 }
 
 interface Project extends Anchor {
-
+  uuid?: string,
+  description: string,
+  figma?: string,
+  website?: string,
+  preview?: string
 }
