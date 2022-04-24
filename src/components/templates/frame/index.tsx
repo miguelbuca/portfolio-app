@@ -17,7 +17,7 @@ const Frame: NextPage<Props> = ({ url }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="fixed overflow-y-auto scroll-smooth left-0 top-0 h-full w-full bg-[#141414] text-white">
-        <Header />
+        <Header variant='iframe' />
         <iframe src={url} frameBorder="0" className='w-full h-full'/>
       </main>
     </>
