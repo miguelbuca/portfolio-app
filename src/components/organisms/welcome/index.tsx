@@ -8,7 +8,7 @@ interface Props {
 
 const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
   return (
-    <div className="h-[calc(100vh-6rem)] mb-[1rem] grid grid-cols-2">
+    <div className="min-h-[calc(100vh-6rem)] mb-[1rem] grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
       <div className="flex items-center">
         <div className="flex flex-col">
           <h1 data-testid="welcome-title" className="text-[48pt]">
@@ -29,7 +29,7 @@ const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-end items-center">
+      <div className="relative flex md:flex sm:hidden justify-end items-center">
         <div className="w-[60%]">
           <UserPhoto url={url} />
         </div>

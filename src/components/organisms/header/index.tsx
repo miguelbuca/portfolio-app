@@ -36,7 +36,7 @@ const Header: NextPage<Props> = ({ variant }) => {
             </a>
           </Link>
         </div>
-        <div className="flex flex-1 flex-row items-center justify-end text-sm capitalize">
+        <div className="flex lg:flex md:flex sm:hidden flex-1 flex-row items-center justify-end text-sm capitalize">
           <Link href={"#skills"}>
             <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
               skills
@@ -72,9 +72,34 @@ const Header: NextPage<Props> = ({ variant }) => {
             </a>
           </Link>
         </div>
+        <div className="hidden lg:hidden md:hidden sm:flex flex-1 flex-row items-center justify-end">
+          <svg
+            width={30}
+            version="1.1"
+            className="fill-white"
+            viewBox="0 0 56 56"
+          >
+            <path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M40,41H16c-1.104,0-2-0.896-2-2s0.896-2,2-2  h24c1.104,0,2,0.896,2,2S41.104,41,40,41z M40,30H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,30,40,30z   M40,19H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,19,40,19z" />
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+        </div>
       </header>
       {variant == "iframe" && (
-        <header className="fixed right-[2rem] bottom-0 p-[.5rem_1rem] bg-[rgba(0,0,0,.5)] rounded-t-md">
+        <header className="fixed right-[1rem] bottom-0 p-[.3rem] bg-[rgba(0,0,0,.5)] rounded-t-md">
           <Link href={"/"}>
             <a className="flex flex-row items-center">
               <svg
@@ -90,10 +115,6 @@ const Header: NextPage<Props> = ({ variant }) => {
                   fill="currentColor"
                 ></path>
               </svg>
-              <strong className="mr-1">Miguelbuca</strong>
-              <span className="text-gray-200 text-[11pt]">
-                Software Engineer | view
-              </span>
             </a>
           </Link>
         </header>

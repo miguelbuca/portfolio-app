@@ -29,8 +29,8 @@ const Footer: NextPage = () => {
       id="about"
       className="h-auto border-t-[rgba(255,255,255,.06)] flex flex-col border-t border-solid"
     >
-      <div className="container md:container md:mx-auto flex-1 pb-[6rem] pt-[3rem] flex flex-row">
-        <div className="flex-1 flex flex-col">
+      <div className="container md:container md:mx-auto flex-1 pb-[6rem] pt-[3rem] lg:flex-row md:flex-row  sm:flex-col flex flex-row">
+        <div className="flex-1 flex flex-col sm:mb-[1rem]">
           <div className="flex-1 flex flex-row items-center">
             <svg
               viewBox="0 0 32 32"

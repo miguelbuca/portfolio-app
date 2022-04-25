@@ -6,9 +6,9 @@ const Skills: NextPage<Props> = ({ ...props }) => {
   return (
     <div
       id="skills"
-      className="h-[calc(100vh-6rem)] flex-1 mb-[1rem] flex flex-col"
+      className="min-h-[calc(100vh-6rem)] flex-1 mb-[1rem] flex flex-col"
     >
-      <div className="flex-1 grid grid-cols-2 gap-14">
+      <div className="flex-1 md:grid-cols-2 sm:grid-cols-1 grid grid-cols-2 gap-14">
         <div className="flex-1 grid grid-rows-[7rem_1fr] gap-14">
           <div className="rounded-2xl bg-[rgba(255,255,255,.06)] flex flex-col  p-[1rem]">
             <div>
@@ -220,7 +220,7 @@ const Skills: NextPage<Props> = ({ ...props }) => {
             </div>
           </div>
         </div>
-        <div className="relative rounded-2xl before:content-['\201c'] before:absolute before:text-[rgba(255,255,255,.06)] before:left-[-3.5rem] before:leading-[1rem] before:top-[6rem] before:text-[25rem] flex flex-col  p-[1rem]">
+        <div className="relative rounded-2xl sm:mt-[4rem] before:content-['\201c'] before:absolute before:text-[rgba(255,255,255,.06)] before:left-[-3.5rem] before:leading-[1rem] before:top-[6rem] before:text-[25rem] flex flex-col  p-[1rem]">
           <div>
             <h1 className="text-[22pt] mb-[1rem]">How do i work ?</h1>
           </div>
