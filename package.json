@@ -21,6 +21,7 @@
     "@slicemachine/init": "^1.1.8",
     "@swc/core": "^1.2.170",
     "@swc/jest": "^0.2.20",
+    "i18n": "^0.14.2",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
