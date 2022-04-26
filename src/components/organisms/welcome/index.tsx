@@ -31,7 +31,11 @@ const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
       </div>
       <div className="relative flex md:flex sm:hidden justify-end items-center">
         <div className="w-[60%]">
-          <UserPhoto url={url} />
+          <UserPhoto
+            url={
+              "https://images.prismic.io/miguelbuca-portfolio/c52fb187-f199-4a63-aa5f-ae3c12576c11_photo1650620976.jpeg?auto=compress,format"
+            }
+          />
         </div>
       </div>
     </div>
