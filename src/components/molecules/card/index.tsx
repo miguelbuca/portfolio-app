@@ -20,7 +20,7 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
       </div>
       <div className="flex flex-row">
         <strong className="mr-1">
-          <a href={details.job?.link} target={'_blank'} className="underline">
+          <a href={details.job?.link} target={"_blank"} className="underline">
             {details.job?.name}
           </a>
         </strong>
@@ -62,7 +62,7 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
             <a>
               <img
                 className="w-full h-full rounded-2xl"
-                src={details.project?.image}
+                src={details.project?.image?.split('?')[0]}
                 alt="preview"
               />
               <span className="absolute overflow-hidden flex flex-row items-center h-[30px] w-[30px] hover:transition-all hover:w-[70px] rounded-[4px] bg-white p-[.3rem_.5rem] text-[10pt] text-black top-[1rem] right-[1rem]">
