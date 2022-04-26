@@ -11,7 +11,7 @@
         "**/.vscode": true,
         "**/.next": true,
         "**/.slicemachine": true,
-        "**/customtypes": true,
+       // "**/customtypes": true,
         "**/slices": true,
         "**/coverage": true,
     }

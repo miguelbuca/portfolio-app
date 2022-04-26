@@ -1,0 +1,37 @@
+{
+  "id": "aa81e60a-b2b3-4e28-94e6-c576a2c973c4",
+  "uid": "delectus-accusantium-sed",
+  "type": "project",
+  "data": {
+    "link": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+    },
+    "description": "transition magnetic content",
+    "figma": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "github": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "website": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "preview": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    }
+  }
+}
