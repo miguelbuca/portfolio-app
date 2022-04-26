@@ -1,35 +1,11 @@
 import { NextPage } from 'next';
 import { Card } from '../../molecules/card';
 
-const Worked: NextPage = () => {
+export interface Props {
+  data: Job[]
+}
 
-  const job: Job[] = [
-    {
-      name: "SNIR, SA.",
-      country: "Luanda, Angola",
-      link: "http://snir.co.ao/",
-      title: "Frontend Developer",
-      image: "http://snir.co.ao/assets/images/logo1.png",
-      description: "Banking and Insurance",
-    },
-    {
-      name: "Genezys",
-      country: "Brazil",
-      link: "https://genezys.io/",
-      title: "Fullstack Developer",
-      image: "https://nft.genezys.io/media/svg/new_logo5.png",
-      description: "Cryptocurrencies and NFT",
-    },
-    {
-      name: "Uteis & Razoaveis Lda",
-      country: "Porto, Portugal",
-      link: "https://www.uteiserazoaveis.com",
-      title: "Frontend Developer",
-      image:
-        "https://media-exp1.licdn.com/dms/image/C4E0BAQH4oWxQIXR-Vw/company-logo_200_200/0/1529052075238?e=2147483647&v=beta&t=Fh6kE68kgBqNPiKnDp4mqvY1gQOXinjs50KGfr5EHQA",
-      description: "IT and finance",
-    },
-  ];
+const Worked: NextPage<Props> = ({ data: job }) => {
 
   return (
     <div

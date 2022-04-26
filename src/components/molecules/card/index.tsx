@@ -20,7 +20,7 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
       </div>
       <div className="flex flex-row">
         <strong className="mr-1">
-          <a href={details.job?.link} className="underline">
+          <a href={details.job?.link} target={'_blank'} className="underline">
             {details.job?.name}
           </a>
         </strong>

@@ -1,0 +1,24 @@
+{
+  "id": "9f60c97f-40b1-48b1-b09e-de8635f5c0f7",
+  "uid": "facilis-et-et",
+  "type": "portfolio-job",
+  "data": {
+    "name": "synergize out-of-the-box interfaces",
+    "link": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+    },
+    "title": "drive compelling e-commerce",
+    "country": "enable clicks-and-mortar portals",
+    "description": "synergize front-end markets"
+  }
+}

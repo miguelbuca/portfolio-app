@@ -6,13 +6,13 @@ import Worked from '../src/components/organisms/worked';
 import Main from '../src/components/templates/main';
 import prismicClient from '../src/services/prismic';
 
-const Home: NextPage<any> = ({ ...props }) => {
+const Home: NextPage<any> = ({ worked }) => {
   return (
     <Main>
-        <Welcome userPhoto={props.app[0]?.data?.userPhoto} />
-        <Skills />
-        <Worked/>
-        <Portfolio/>
+      <Welcome userPhoto={""} />
+      <Skills />
+      <Worked data={worked} />
+      <Portfolio />
     </Main>
   );
 }
@@ -21,18 +21,24 @@ export default Home
 
 export const getStaticProps: GetStaticProps = async () => {
 
-  /*const projectResponse = await prismic.query(
-    [prismic.predicate.at("document.type", "portfolio-custom-type")],
-    { orderings: "[document.createdAt desc]" }
-  );*/
-
-  //console.log(await prismicClient().getByType("portfolio-custom-type"));
-
-  //console.log(await prismicClient().get());
+  const worked = (
+    await prismicClient().getByType("job", {
+      orderings: {
+        field: "document.first_publication_date",
+        direction: "desc",
+      },
+    })
+  ).results.map(({ data }: any) => {
+    return {
+      ...data,
+      link: data.link.url,
+      image: data.image.url,
+    } as Job;
+  });
 
   return {
     props: {
-      app: (await prismicClient().get()).results,
+      worked
     },
     //revalidate: 86400,
   };

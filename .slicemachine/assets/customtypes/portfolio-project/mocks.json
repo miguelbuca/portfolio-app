@@ -1,0 +1,38 @@
+{
+  "id": "9d090c0c-3c7c-44f3-b970-87454a2a7460",
+  "uid": "voluptate-facilis-illum",
+  "type": "portfolio-project",
+  "data": {
+    "name": "productize global relationships",
+    "link": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+    },
+    "description": "visualize enterprise portals",
+    "figma": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "github": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "website": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "preview": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    }
+  }
+}

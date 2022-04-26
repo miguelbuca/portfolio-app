@@ -13,8 +13,17 @@ export const UserPhoto: NextPage<Props, any> = ({
   ...args
 }) => {
   return (
-    <div {...args} className="before:box-content('') before:bottom-[60%] before:right-[30%] before:absolute before:border-[rgba(255,255,255,.06)] before:border-solid before:border-[.3rem] before:-z-10 before:h-[200px] before:w-[200px]">
-      <img alt="userPhoto" src={url} className="w-fit h-full p-[2rem]" />
+    <div
+      {...args}
+      className="before:box-content('') before:rounded-2xl before:bottom-[60%] before:right-[30%] before:absolute before:border-[rgba(255,255,255,.06)] before:border-solid before:border-[.3rem] before:-z-10 before:h-[200px] before:w-[200px]"
+    >
+      <div className="p-[2rem]">
+        <img
+          alt="userPhoto"
+          src={url}
+          className="w-fit h-full rounded-2xl"
+        />
+      </div>
     </div>
   );
 };

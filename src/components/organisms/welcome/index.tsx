@@ -24,7 +24,7 @@ const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
             attract new customers.
           </h4>
           <div className="flex flex-row mt-5">
-            <Button className="mr-4">Download CV &#8595;</Button>
+            <Button className="mr-4">Download CV</Button>
             <Button variant="secondary">Get in touch &#8594;</Button>
           </div>
         </div>

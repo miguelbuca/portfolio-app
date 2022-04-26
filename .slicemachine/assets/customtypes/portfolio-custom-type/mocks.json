@@ -1,9 +1,9 @@
 {
-  "id": "c3a01af1-0db5-4d81-9034-a250aa6c102e",
-  "uid": "ut-consequatur-iusto",
+  "id": "91548ec0-f156-4721-8e22-9c25b07eef70",
+  "uid": "eligendi-id-deserunt",
   "type": "portfolio-custom-type",
   "data": {
-    "appName": "brand proactive architectures",
+    "appName": "engineer open-source experiences",
     "favicon": {
       "dimensions": {
         "width": 900,
@@ -11,11 +11,11 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
     },
     "address": {
-      "latitude": 48.8703712,
-      "longitude": 2.3865198
+      "latitude": 48.8841267,
+      "longitude": 2.3300579
     },
     "userPhoto": {
       "dimensions": {
@@ -24,7 +24,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
     },
     "url": {
       "link_type": "Web",
@@ -37,15 +37,45 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
     },
-    "description": [
+    "desc": [
       {
         "type": "paragraph",
-        "text": "Ad pariatur laboris deserunt ad nulla eiusmod. Voluptate nisi nostrud ipsum velit excepteur sunt ut labore est veniam tempor proident esse consequat.",
+        "text": "Irure pariatur officia Lorem non laborum enim ipsum nostrud qui.",
         "spans": []
       }
     ],
-    "createdAt": "2013-07-11"
+    "createdAt": "2021-03-09",
+    "figma": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "github": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "website": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
+    "preview": "whiteboard proactive ROI",
+    "country": "expedite collaborative ROI",
+    "name": "deploy collaborative supply-chains",
+    "link": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "icon": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+    },
+    "title": "embrace ubiquitous blockchains",
+    "description": "architect B2B synergies"
   }
 }

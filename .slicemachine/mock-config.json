@@ -1,5 +1,18 @@
 {
   "_cts": {
-    "portfolio-custom-type": {}
+    "portfolio-custom-type": {
+      "desc": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "portfolio-project": {},
+    "portfolio-job": {},
+    "job": {}
+  },
+  "slices": {
+    "Test": {}
   }
 }
