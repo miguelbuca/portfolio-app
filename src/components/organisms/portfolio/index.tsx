@@ -1,21 +1,11 @@
 import { NextPage } from "next";
 import { Card } from "../../molecules/card";
 
-const Portfolio: NextPage = () => {
-  const project: Project[] = [
-    {
-      uuid: '854s55d4fs65',
-      website: 'teta',
-      name: "SNIR, SA.",
-      link: "http://snir.co.ao/",
-      github: "http://snir.co.ao/",
-      preview:
-        "https://cdn.dribbble.com/users/501822/screenshots/5312532/media/999b45ba7e293832e32d9352f6750fa4.gif",
-      description: "Banking and Insurance",
-      figma: "http://snir.co.ao/assets/images/logo1.png",
-    },
-  ];
+export interface Props{
+  data: Job[]
+}
 
+const Portfolio: NextPage<Props> = ({ data: project }) => {
   return (
     <div
       id="projects"

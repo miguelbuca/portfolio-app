@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 
 const Footer: NextPage = () => {
-
   const social: Anchor[] = [
     {
       name: "LinkedIn",
@@ -13,16 +12,16 @@ const Footer: NextPage = () => {
     },
   ];
 
-   const contact: Anchor[] = [
-     {
-       name: "Email",
-       link: "mailto:miguelpedrobuca@gmail.com",
-     },
-     {
-       name: "(+244) 948 600 567",
-       link: "tel:+244948600567",
-     }
-   ];
+  const contact: Anchor[] = [
+    {
+      name: "Email",
+      link: "mailto:miguelpedrobuca@gmail.com",
+    },
+    {
+      name: "(+244) 948 600 567",
+      link: "tel:+244948600567",
+    },
+  ];
 
   return (
     <footer
@@ -59,8 +58,9 @@ const Footer: NextPage = () => {
               <span className="text-[rgba(255,255,255,.4)] mb-2 capitalize">
                 Follow
               </span>
-              {social.map(({ name, link }) => (
+              {social.map(({ name, link }, index) => (
                 <a
+                  key={index}
                   target={"_blank"}
                   href={link}
                   className="hover:text-[rgba(255,255,255,.4)] transition-all text-white"
@@ -73,8 +73,9 @@ const Footer: NextPage = () => {
               <span className="text-[rgba(255,255,255,.4)] mb-2 capitalize">
                 Contact
               </span>
-              {contact.map(({ name, link }) => (
+              {contact.map(({ name, link }, index) => (
                 <a
+                  key={index}
                   target={"_blank"}
                   href={link}
                   className="hover:text-[rgba(255,255,255,.4)] transition-all text-white"

@@ -58,11 +58,11 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
     <div className="flex-1 rounded-2xl bg-[rgba(255,255,255,.06)] flex flex-col p-[.3rem] min-h-[280px]">
       <div className="flex-1 p-0 rounded-2xl cursor-pointer relative">
         {details.project?.website ? (
-          <Link href={"/projects/" + details.project.uuid}>
+          <Link href={"/projects/" + details.project.name}>
             <a>
               <img
                 className="w-full h-full rounded-2xl"
-                src={details.project?.preview}
+                src={details.project?.image}
                 alt="preview"
               />
               <span className="absolute overflow-hidden flex flex-row items-center h-[30px] w-[30px] hover:transition-all hover:w-[70px] rounded-[4px] bg-white p-[.3rem_.5rem] text-[10pt] text-black top-[1rem] right-[1rem]">
@@ -106,7 +106,7 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
               target={"_blank"}
               title="See repository"
               href={details.project.github}
-              className="flex flex-row items-center mr-[1rem]"
+              className="flex flex-row items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,10 @@
 import { NextPage } from "next";
+import { useRouter } from "next/router";
 import Frame from "../../src/components/templates/frame";
 
 const Project: NextPage = () => {
-  return <Frame url="https://spider-v01.netlify.app/" />;
+  const { query } = useRouter();
+  return <Frame url={`https://${query?.name}.netlify.app/`} />;
 };
 
 export default Project;
