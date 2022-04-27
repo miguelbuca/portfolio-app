@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { useIntl } from "react-intl";
 import { Button } from "../../atoms/button";
@@ -8,7 +9,7 @@ const Welcome: NextPage = () => {
   const { formatMessage: t } = useIntl();
 
   return (
-    <div className="min-h-[calc(100vh-6rem)] mb-[1rem] grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+    <div className="h-[calc(100vh-6rem)] overflow-hidden mb-[4rem] grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
       <div className="flex items-center">
         <div className="flex flex-col">
           <h1 data-testid="welcome-title" className="text-[48pt]">
@@ -27,7 +28,7 @@ const Welcome: NextPage = () => {
                 <Button className="mr-4">{t({ id: "downloadCV" })}</Button>
               </a>
             </Link>
-            <Link href={'mailto:miguelpedobuca@gmail.com'}>
+            <Link href={"mailto:miguelpedobuca@gmail.com"}>
               <a>
                 <Button variant="secondary">
                   {t({ id: "getInTouch" })} &#8594;
@@ -37,14 +38,21 @@ const Welcome: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex md:flex sm:hidden justify-end items-center">
-        <div className="w-[60%]">
+      <div className=" grad bg-radial-gradient overflow-hidden h-[90%] relative flex md:flex sm:hidden justify-end items-center">
+        <img
+          alt="dev-img"
+          src={
+            "https://images.prismic.io/miguelbuca-portfolio/c486e0cb-1820-4bdc-a6df-1dfa19abb604_photo1651043361%281%29.png?auto=compress,format"
+          }
+          className="h-[50rem] absolute z-[-1] top-[.4rem]"
+        />
+        {/*<div className="w-full bg-contain rounded-full bg-no-repeat bg-[url(https://images.prismic.io/miguelbuca-portfolio/ab3d6808-37dc-4039-8e61-bedb74c16069_photo1651043361.png?auto=compress,format)]">
           <UserPhoto
             url={
-              "https://images.prismic.io/miguelbuca-portfolio/c52fb187-f199-4a63-aa5f-ae3c12576c11_photo1650620976.jpeg?auto=compress,format"
+              "https://images.prismic.io/miguelbuca-portfolio/ab3d6808-37dc-4039-8e61-bedb74c16069_photo1651043361.png?auto=compress,format"
             }
           />
-        </div>
+          </div>*/}
       </div>
     </div>
   );

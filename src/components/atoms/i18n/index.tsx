@@ -9,7 +9,7 @@ export const I18n: NextPage<Props> = ({ ...args }) => {
   return (
     <button
       title="Change language"
-      className="fixed rounded-full h-[50px] w-[50px] z-10 bg-white text-black flex  items-center justify-center lg:right-[8rem] md:right-[4rem] sm:right-[2rem] bottom-[2rem]"
+      className="fixed rounded-full h-[50px] w-[50px] z-10 bg-white text-black flex  items-center justify-center lg:right-[8rem] md:right-[4rem] sm:right-[4rem] bottom-[2rem]"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
