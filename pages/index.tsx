@@ -10,7 +10,7 @@ import prismicClient from '../src/services/prismic';
 const Home: NextPage<any> = ({ worked, project }) => {
   return (
     <Main>
-      <Welcome userPhoto={""} />
+      <Welcome />
       <Skills />
       <Worked data={worked} />
       <Portfolio data={project} />
