@@ -1,31 +1,39 @@
-import { NextPage } from 'next';
-import { Button } from '../../atoms/button';
-import { UserPhoto } from '../../molecules/userPhoto';
+import { NextPage } from "next";
+import Link from "next/link";
+import { useIntl } from "react-intl";
+import { Button } from "../../atoms/button";
+import { UserPhoto } from "../../molecules/userPhoto";
 
-interface Props {
-  userPhoto: any
-}
+const Welcome: NextPage = () => {
+  const { formatMessage: t } = useIntl();
 
-const Welcome: NextPage<Props> = ({ userPhoto: { url } }) => {
   return (
     <div className="min-h-[calc(100vh-6rem)] mb-[1rem] grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
       <div className="flex items-center">
         <div className="flex flex-col">
           <h1 data-testid="welcome-title" className="text-[48pt]">
-            Welcome!
+            {t({ id: "welcome" })}
           </h1>
           <h4>
-            Over the past{" "}
+            {t({ id: "OverThePastResume" })}
             <span className="p-[.1rem_.5rem] mx-1 bg-[rgba(255,255,255,.06)]">
-              4 years
+              4 {t({ id: "year" })}
             </span>
-            as a software developer, I have worked with mid-sized companies and
-            up-and-coming startups to help them reach their full potential and
-            attract new customers.
+            {t({ id: "devResume" })}
           </h4>
           <div className="flex flex-row mt-5">
-            <Button className="mr-4">Download CV</Button>
-            <Button variant="secondary">Get in touch &#8594;</Button>
+            <Link href={"/"}>
+              <a>
+                <Button className="mr-4">{t({ id: "downloadCV" })}</Button>
+              </a>
+            </Link>
+            <Link href={'mailto:miguelpedobuca@gmail.com'}>
+              <a>
+                <Button variant="secondary">
+                  {t({ id: "getInTouch" })} &#8594;
+                </Button>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

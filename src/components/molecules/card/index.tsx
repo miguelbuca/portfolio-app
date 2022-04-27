@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import { HTMLAttributes } from "react";
+import { useIntl } from "react-intl";
 
 export interface Details {
   job?: Job;
@@ -13,6 +14,8 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
+  const { formatMessage: t } = useIntl();
+
   return variant === "Job" ? (
     <div {...args} className="flex flex-col justify-center items-center">
       <div className="mb-2">
@@ -62,7 +65,7 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
             <a>
               <img
                 className="w-full h-full rounded-2xl"
-                src={details.project?.image?.split('?')[0]}
+                src={details.project?.image?.split("?")[0]}
                 alt="preview"
               />
               <span className="absolute overflow-hidden flex flex-row items-center h-[30px] w-[30px] hover:transition-all hover:w-[70px] rounded-[4px] bg-white p-[.3rem_.5rem] text-[10pt] text-black top-[1rem] right-[1rem]">
@@ -81,7 +84,7 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
                   </svg>
                 </span>
                 <span className="left-[-1rem] text-[rgba(0,0,0,.8)] capitalize">
-                  view
+                  {t({ id: "view" })}
                 </span>
               </span>
             </a>

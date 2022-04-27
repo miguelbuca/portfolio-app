@@ -1,6 +1,10 @@
 import { NextPage } from "next";
+import { useIntl } from "react-intl";
 
 const Footer: NextPage = () => {
+
+  const { formatMessage: t } = useIntl();
+
   const social: Anchor[] = [
     {
       name: "LinkedIn",
@@ -9,6 +13,10 @@ const Footer: NextPage = () => {
     {
       name: "GitHub",
       link: "https://github.com/miguelbuca",
+    },
+    {
+      name: "Twitter",
+      link: "https://twitter.com/miguel_buca/",
     },
   ];
 
@@ -44,7 +52,7 @@ const Footer: NextPage = () => {
                 fill="currentColor"
               ></path>
             </svg>
-            <strong className="mr-1">All Rights Reserved.</strong>
+            <strong className="mr-1">{t({ id: "allEightsReserved" })}</strong>
           </div>
           <div>
             <span className="text-[rgba(255,255,255,.4)] text-[11pt]">
@@ -56,7 +64,7 @@ const Footer: NextPage = () => {
           <div className="grid grid-cols-2 gap-10 child:grid child:grid-rows-1">
             <div>
               <span className="text-[rgba(255,255,255,.4)] mb-2 capitalize">
-                Follow
+                {t({ id: "follow" })}
               </span>
               {social.map(({ name, link }, index) => (
                 <a
@@ -71,7 +79,7 @@ const Footer: NextPage = () => {
             </div>
             <div>
               <span className="text-[rgba(255,255,255,.4)] mb-2 capitalize">
-                Contact
+                {t({ id: "contact" })}
               </span>
               {contact.map(({ name, link }, index) => (
                 <a

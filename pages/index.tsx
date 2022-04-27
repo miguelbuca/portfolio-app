@@ -1,4 +1,5 @@
 import type { GetStaticProps, NextPage } from 'next'
+import { useRouter } from 'next/router';
 import Portfolio from '../src/components/organisms/portfolio';
 import Skills from '../src/components/organisms/skills';
 import Welcome from '../src/components/organisms/welcome';

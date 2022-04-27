@@ -1,8 +1,10 @@
 import { NextPage } from 'next';
+import { useIntl } from 'react-intl';
 
 interface Props {}
 
 const Skills: NextPage<Props> = ({ ...props }) => {
+  const { formatMessage: t } = useIntl();
   return (
     <div
       id="skills"
@@ -12,7 +14,9 @@ const Skills: NextPage<Props> = ({ ...props }) => {
         <div className="flex-1 grid grid-rows-[7rem_1fr] gap-14">
           <div className="rounded-2xl bg-[rgba(255,255,255,.06)] flex flex-col  p-[1rem]">
             <div>
-              <strong className="capitalize mb-1">top skills</strong>
+              <strong className="capitalize mb-1">
+                {t({ id: "topSkills" })}
+              </strong>
             </div>
             <div className="flex-1 grid grid-cols-6 gap-1">
               <span title="NextJS" className="flex items-center justify-center">
@@ -125,8 +129,8 @@ const Skills: NextPage<Props> = ({ ...props }) => {
           </div>
           <div className="rounded-2xl bg-[rgba(255,255,255,.06)] flex flex-col  p-[1rem]">
             <div className="flex flex-col">
-              <strong className="capitalize mb-1">Others</strong>
-              <small>Tools I use often</small>
+              <strong className="capitalize mb-1">{t({ id: "others" })}</strong>
+              <small>{t({ id: "toolsIUseOften" })}</small>
             </div>
             <div className="mt-5">
               <ul className="child:grid child:items-center child:p-[1rem] child:grid-cols-[40px_1fr] child:gap-[10px] child-no-last:border-b-[1px] child-no-last:border-b-[rgba(255,255,255,.06)]">
@@ -167,7 +171,7 @@ const Skills: NextPage<Props> = ({ ...props }) => {
                   </div>
                   <div>
                     <strong className="mr-1">Prismic</strong>
-                    <small>Content Management System - CMS</small>
+                    <small>{t({ id: "prismicio" })}</small>
                   </div>
                 </li>
                 <li>
@@ -190,7 +194,7 @@ const Skills: NextPage<Props> = ({ ...props }) => {
                   </div>
                   <div>
                     <strong className="mr-1">Tailwind CSS</strong>
-                    <small>Utility-first CSS framework</small>
+                    <small>{t({ id: "tailwindCSS" })}</small>
                   </div>
                 </li>
                 <li>
@@ -213,7 +217,7 @@ const Skills: NextPage<Props> = ({ ...props }) => {
                   </div>
                   <div>
                     <strong className="mr-1">Jest</strong>
-                    <small>Javascript testing framework</small>
+                    <small>{t({ id: "jest" })}</small>
                   </div>
                 </li>
               </ul>
@@ -222,16 +226,14 @@ const Skills: NextPage<Props> = ({ ...props }) => {
         </div>
         <div className="relative rounded-2xl sm:mt-[4rem] before:content-['\201c'] before:absolute before:text-[rgba(255,255,255,.06)] before:left-[-3.5rem] before:leading-[1rem] before:top-[6rem] before:text-[25rem] flex flex-col  p-[1rem]">
           <div>
-            <h1 className="text-[22pt] mb-[1rem]">How do i work ?</h1>
+            <h1 className="text-[22pt] mb-[1rem]">{t({ id: "howDoIWork" })}</h1>
           </div>
           <div>
-            I usually use typescript
+            {t({ id: "iUsuallyUseTypescript" })}
             <span className="p-[.1rem_.5rem] mx-1 bg-[rgba(255,255,255,.06)]">
               ( .ts, .d.ts, .spec.ts )
             </span>
-            with an atomic design system pattern, I do unit tests using jest and
-            storybook to document the react components and for page styling I
-            work with tailwindcss or styled-component.
+            {t({ id: "howDoIWorkText" })}
           </div>
         </div>
       </div>

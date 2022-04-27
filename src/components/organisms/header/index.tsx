@@ -1,11 +1,15 @@
 import { NextPage } from "next";
 import Link from "next/link";
+import { useIntl } from "react-intl";
 
 export interface Props{
   variant?: 'default' | 'iframe'
 }
 
 const Header: NextPage<Props> = ({ variant }) => {
+
+  const { formatMessage: t } = useIntl()
+
   return (
     <>
       <header
@@ -31,7 +35,7 @@ const Header: NextPage<Props> = ({ variant }) => {
               </svg>
               <strong className="mr-1">Miguelbuca</strong>
               <span className="text-gray-200 text-[11pt]">
-                Software Engineer
+                {t({ id: "logoText" })}
               </span>
             </a>
           </Link>
@@ -39,26 +43,29 @@ const Header: NextPage<Props> = ({ variant }) => {
         <div className="flex lg:flex md:flex sm:hidden flex-1 flex-row items-center justify-end text-sm capitalize">
           <Link href={"#skills"}>
             <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
-              skills
+              {t({ id: "skills" })}
             </a>
           </Link>
           <Link href={"#worked"}>
             <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
-              worked
+              {t({ id: "work" })}
             </a>
           </Link>
           <Link href={"#projects"}>
             <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
-              projects
+              {t({ id: "projects" })}
             </a>
           </Link>
           <Link href={"#about"}>
             <a className="text-[rgba(255,255,255,.4)] transition-all hover:text-white px-[.5rem]">
-              about
+              {t({ id: "about" })}
             </a>
           </Link>
-          <Link href={"/"}>
-            <a className="text-[rgba(255,255,255,.6)] transition-all hover:text-white px-[.5rem]">
+          <Link href={"https://github.com/miguelbuca"}>
+            <a
+              target={"_blank"}
+              className="text-[rgba(255,255,255,.6)] transition-all hover:text-white px-[.5rem]"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

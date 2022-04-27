@@ -1,6 +1,7 @@
 import { NextPage } from 'next'
 import Head from 'next/head';
 import { HTMLAttributes } from 'react';
+import { I18n } from '../../atoms/i18n';
 import Footer from '../../organisms/footer';
 import Header from '../../organisms/header';
 
@@ -18,6 +19,7 @@ const Main: NextPage<Props> = ({ children }) => {
         <Header />
         <div className="container md:container md:mx-auto">{children}</div>
         <Footer />
+        <I18n/>
       </main>
     </>
   );
