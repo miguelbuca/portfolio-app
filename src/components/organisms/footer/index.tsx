@@ -68,9 +68,8 @@ const Footer: NextPage = () => {
                 {t({ id: "follow" })}
               </span>
               {social.map(({ name, link }, index) => (
-                <Link href={link}>
+                <Link href={link} key={index}>
                   <a
-                    key={index}
                     target={"_blank"}
                     rel="noopener noreferrer"
                     className="hover:text-[rgba(255,255,255,.4)] transition-all text-white"
@@ -85,9 +84,8 @@ const Footer: NextPage = () => {
                 {t({ id: "contact" })}
               </span>
               {contact.map(({ name, link }, index) => (
-                <Link href={link}>
+                <Link href={link} key={index}>
                   <a
-                    key={index}
                     target={"_blank"}
                     rel="noopener noreferrer"
                     className="hover:text-[rgba(255,255,255,.4)] transition-all text-white"
