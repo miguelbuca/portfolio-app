@@ -44,7 +44,7 @@ const Welcome: NextPage = () => {
           height={800}
           width={550}
           style={{
-            marginTop: 150
+            marginTop: '150px'
           }}
           src={
             "https://images.prismic.io/miguelbuca-portfolio/c486e0cb-1820-4bdc-a6df-1dfa19abb604_photo1651043361%281%29.png?auto=compress,format"
