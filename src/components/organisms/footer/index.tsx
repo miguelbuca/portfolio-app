@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Link from "next/link";
 import { useIntl } from "react-intl";
 
 const Footer: NextPage = () => {
@@ -67,14 +68,16 @@ const Footer: NextPage = () => {
                 {t({ id: "follow" })}
               </span>
               {social.map(({ name, link }, index) => (
-                <a
-                  key={index}
-                  target={"_blank"}
-                  href={link}
-                  className="hover:text-[rgba(255,255,255,.4)] transition-all text-white"
-                >
-                  {name}
-                </a>
+                <Link href={link}>
+                  <a
+                    key={index}
+                    target={"_blank"}
+                    rel="noopener noreferrer"
+                    className="hover:text-[rgba(255,255,255,.4)] transition-all text-white"
+                  >
+                    {name}
+                  </a>
+                </Link>
               ))}
             </div>
             <div>
@@ -82,14 +85,16 @@ const Footer: NextPage = () => {
                 {t({ id: "contact" })}
               </span>
               {contact.map(({ name, link }, index) => (
-                <a
-                  key={index}
-                  target={"_blank"}
-                  href={link}
-                  className="hover:text-[rgba(255,255,255,.4)] transition-all text-white"
-                >
-                  {name}
-                </a>
+                <Link href={link}>
+                  <a
+                    key={index}
+                    target={"_blank"}
+                    rel="noopener noreferrer"
+                    className="hover:text-[rgba(255,255,255,.4)] transition-all text-white"
+                  >
+                    {name}
+                  </a>
+                </Link>
               ))}
             </div>
           </div>

@@ -64,6 +64,7 @@ const Header: NextPage<Props> = ({ variant }) => {
           <Link href={"https://github.com/miguelbuca"}>
             <a
               target={"_blank"}
+              rel="noopener noreferrer"
               className="text-[rgba(255,255,255,.6)] transition-all hover:text-white px-[.5rem]"
             >
               <svg
