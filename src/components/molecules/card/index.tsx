@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { HTMLAttributes } from "react";
 import { useIntl } from "react-intl";
@@ -19,7 +20,13 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
   return variant === "Job" ? (
     <div {...args} className="flex flex-col justify-center items-center">
       <div className="mb-2">
-        <img alt="cardPhoto" src={details.job?.image} className="h-[100px]" />
+        <Image
+          alt="cardPhoto"
+          height={100}
+          width={100}
+          src={details.job?.image as any}
+          className="h-[100px]"
+        />
       </div>
       <div className="flex flex-row">
         <strong className="mr-1">
@@ -63,9 +70,10 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
         {details.project?.website ? (
           <Link href={"/projects/" + details.project.name}>
             <a>
-              <img
+              <Image
+                layout="fill"
                 className="w-full h-full rounded-2xl"
-                src={details.project?.image?.split("?")[0]}
+                src={details.project?.image?.split("?")[0] as any}
                 alt="preview"
               />
               <span className="absolute overflow-hidden flex flex-row items-center h-[30px] w-[30px] hover:transition-all hover:w-[70px] rounded-[4px] bg-white p-[.3rem_.5rem] text-[10pt] text-black top-[1rem] right-[1rem]">
@@ -91,9 +99,10 @@ export const Card: NextPage<Props, any> = ({ variant, details, ...args }) => {
           </Link>
         ) : (
           <>
-            <img
+            <Image
+              layout="fill"
               className="w-full h-full rounded-2xl"
-              src={details.project?.preview}
+              src={details.project?.preview as any}
               alt="preview"
             />
           </>

@@ -18,10 +18,11 @@ export const UserPhoto: NextPage<Props, any> = ({
       className="before:box-content('') before:rounded-2xl before:bottom-[60%] before:right-[30%] before:absolute before:border-[rgba(255,255,255,.06)] before:border-solid before:border-[.3rem] before:-z-10 before:h-[200px] before:w-[200px]"
     >
       <div className="p-[4rem]">
-        <img
+        <Image
           alt="userPhoto"
           src={url}
           className="w-full h-full"
+          layout="fill"
         />
       </div>
     </div>

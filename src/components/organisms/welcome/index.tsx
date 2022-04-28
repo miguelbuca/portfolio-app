@@ -38,13 +38,18 @@ const Welcome: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className=" grad bg-radial-gradient overflow-hidden h-[90%] relative flex md:flex sm:hidden justify-end items-center">
-        <img
-          alt="dev-img"
+      <div className="bg-radial-gradient overflow-hidden h-[90%] relative flex md:flex sm:hidden justify-end items-center">
+        <Image
+          alt="dev-Image"
+          height={800}
+          width={550}
+          style={{
+            marginTop: 150
+          }}
           src={
             "https://images.prismic.io/miguelbuca-portfolio/c486e0cb-1820-4bdc-a6df-1dfa19abb604_photo1651043361%281%29.png?auto=compress,format"
           }
-          className="h-[50rem] absolute z-[-1] top-[.4rem]"
+          className="z-[-1]"
         />
         {/*<div className="w-full bg-contain rounded-full bg-no-repeat bg-[url(https://images.prismic.io/miguelbuca-portfolio/ab3d6808-37dc-4039-8e61-bedb74c16069_photo1651043361.png?auto=compress,format)]">
           <UserPhoto
