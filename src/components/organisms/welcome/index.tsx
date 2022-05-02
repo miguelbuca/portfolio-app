@@ -38,23 +38,12 @@ const Welcome: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-radial-gradient overflow-hidden pt-[18rem] relative flex md:flex sm:hidden justify-end items-center">
-        <Image
-          alt="dev-Image"
-          height={800}
-          width={550}
-          src={
-            "https://images.prismic.io/miguelbuca-portfolio/c486e0cb-1820-4bdc-a6df-1dfa19abb604_photo1651043361%281%29.png?auto=compress,format"
+      <div className="overflow-hidden relative flex md:flex sm:hidden justify-center items-center">
+        <UserPhoto
+          url={
+            "https://media-exp1.licdn.com/dms/image/C4D03AQHFiRX9HkB91g/profile-displayphoto-shrink_800_800/0/1651401259829?e=1657152000&v=beta&t=DaXV_O2x8nSIn_KzyiAWtxC2SpIjx7O6C-GBHGG1ceo"
           }
-          className="z-[-1]"
         />
-        {/*<div className="w-full bg-contain rounded-full bg-no-repeat bg-[url(https://images.prismic.io/miguelbuca-portfolio/ab3d6808-37dc-4039-8e61-bedb74c16069_photo1651043361.png?auto=compress,format)]">
-          <UserPhoto
-            url={
-              "https://images.prismic.io/miguelbuca-portfolio/ab3d6808-37dc-4039-8e61-bedb74c16069_photo1651043361.png?auto=compress,format"
-            }
-          />
-          </div>*/}
       </div>
     </div>
   );

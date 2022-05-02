@@ -4,8 +4,7 @@ import fr from "../locales/fr.json";
 
 const messages = {
   en,
-  "pt-PT": pt,
-  "pt-BR": pt,
+  pt,
   fr,
 } as any;
 
