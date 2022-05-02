@@ -18,7 +18,7 @@ export const UserPhoto: NextPage<Props, any> = ({
     after:content-[''] after:animate-spin-rotate after:absolute after:transition-all after:h-[315px] after:bg-gradient-to-bl from-violet-800 to-yellow-400 after:w-[100px]
     "
     >
-      <div className="relative h-[300px] z-10 rounded-[50%] border-[18px] border-[#141414] w-[300px]">
+      <div className="relative bg-[#141414] h-[300px] z-10 rounded-[50%] border-[18px] border-[#141414] w-[300px]">
         <Image
           alt="userPhoto"
           src={url}
