@@ -59,6 +59,8 @@ export const getStaticProps: GetStaticProps = async () => {
     } as Job;
   });
 
+  console.log(worked)
+
   return {
     props: {
       worked,

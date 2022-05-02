@@ -14,14 +14,15 @@ export const UserPhoto: NextPage<Props, any> = ({
 }) => {
   return (
     <div
-      {...args}
-      className="before:box-content('') before:rounded-2xl before:bottom-[60%] before:right-[30%] before:absolute before:border-[rgba(255,255,255,.06)] before:border-solid before:border-[.3rem] before:-z-10 before:h-[200px] before:w-[200px]"
+      className="relative hover:after:w-full cursor-pointer flex rounded-[50%] overflow-hidden justify-center items-center h-[315px] w-[315px] before:content-[''] before:absolute before:h-[315px] before:w-[315px] before:bg-[rgba(255,255,255,.06)] before:rounded-[50%]
+    after:content-[''] after:animate-spin-rotate after:absolute after:transition-all after:h-[315px] after:bg-gradient-to-bl from-violet-800 to-yellow-400 after:w-[100px]
+    "
     >
-      <div className="p-[4rem]">
+      <div className="relative bg-[#141414] h-[300px] z-10 rounded-[50%] border-[18px] border-[#141414] w-[300px]">
         <Image
           alt="userPhoto"
           src={url}
-          className="w-full h-full"
+          className="w-full m-[.5rem] rounded-[50%] h-full"
           layout="fill"
         />
       </div>

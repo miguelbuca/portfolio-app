@@ -10,7 +10,17 @@ module.exports = {
         "2xl": "6rem",
       },
     },
-    extend: {},
+    extend: {
+      animation: {
+        "spin-rotate": "animate 4s linear infinite",
+      },
+      keyframes: {
+        animate: {
+          "0%": { transform: "rotate(0deg)" },
+          "0%": { transform: "rotate(360deg)" },
+        },
+      },
+    },
   },
   plugins: [
     function ({ addVariant }) {

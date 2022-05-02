@@ -2,10 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["images.prismic.io"],
+    domains: ["images.prismic.io","media-exp1.licdn.com"],
   },
   i18n: {
-    locales: ["en", "pt-PT", "pt-BR", "fr"],
+    locales: ["en", "pt", "fr"],
     defaultLocale: "en",
     //localeDetection: false
   },
