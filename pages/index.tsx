@@ -59,13 +59,13 @@ export const getStaticProps: GetStaticProps = async () => {
     } as Job;
   });
 
-  console.log(worked)
+  //console.log(worked)
 
   return {
     props: {
       worked,
       project,
     },
-    //revalidate: 86400,
+    revalidate: 86400,
   };
 };

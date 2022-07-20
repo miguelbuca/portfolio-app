@@ -80,7 +80,7 @@ const Header: NextPage<Props> = ({ variant }) => {
             </a>
           </Link>
         </div>
-        <div className="hidden lg:hidden md:hidden sm:flex flex-1 flex-row items-center justify-end">
+        <button onClick={()=>alert("ola mundo")} className="hidden lg:hidden bg-none bottom-0 outline-none md:hidden sm:flex flex-1 flex-row items-center justify-end">
           <svg
             width={30}
             version="1.1"
@@ -104,7 +104,7 @@ const Header: NextPage<Props> = ({ variant }) => {
             <g></g>
             <g></g>
           </svg>
-        </div>
+        </button>
       </header>
       {variant == "iframe" && (
         <header className="fixed right-[1rem] bottom-0 p-[.3rem] bg-[rgba(0,0,0,.5)] rounded-t-md">
