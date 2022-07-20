@@ -1,12 +1,15 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { useMemo } from "react";
 import { useIntl } from "react-intl";
 import { Button } from "../../atoms/button";
 import { UserPhoto } from "../../molecules/userPhoto";
 
 const Welcome: NextPage = () => {
   const { formatMessage: t } = useIntl();
+
+  const expr = useMemo(() => new Date().getFullYear() - 2018, []);
 
   return (
     <div className="h-[calc(100vh-6rem)] overflow-hidden mb-[4rem] grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
@@ -18,7 +21,7 @@ const Welcome: NextPage = () => {
           <h4>
             {t({ id: "OverThePastResume" })}
             <span className="p-[.1rem_.5rem] mx-1 bg-[rgba(255,255,255,.06)]">
-              4 {t({ id: "year" })}
+              {expr} {t({ id: "year" })}
             </span>
             {t({ id: "devResume" })}
           </h4>

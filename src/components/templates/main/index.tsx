@@ -1,9 +1,9 @@
-import { NextPage } from 'next'
-import Head from 'next/head';
-import { HTMLAttributes } from 'react';
-import { I18n } from '../../atoms/i18n';
-import Footer from '../../organisms/footer';
-import Header from '../../organisms/header';
+import { NextPage } from "next";
+import Head from "next/head";
+import { HTMLAttributes } from "react";
+import { I18n } from "../../atoms/i18n";
+import Footer from "../../organisms/footer";
+import Header from "../../organisms/header";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
@@ -17,12 +17,14 @@ const Main: NextPage<Props> = ({ children }) => {
       </Head>
       <main className="fixed overflow-y-auto scroll-smooth left-0 top-0 h-full w-full dark:bg-[#141414] dark:text-white">
         <Header />
-        <div className="container md:container md:mx-auto">{children}</div>
+        <div className="container md:container md:mx-auto">
+          {children}
+          <I18n />
+        </div>
         <Footer />
-        <I18n/>
       </main>
     </>
   );
 };
 
-export default Main
+export default Main;
