@@ -1,5 +1,5 @@
 
-![Logo](/icon.svg)
+![Logo](https://miguelbuca.ao/icon.svg)
 
 
 # Portfolio App
