@@ -49,5 +49,6 @@ Inicie o servidor
 
 ## Stack utilizada
 
-**Front-end:** NextJS , Tailwind CSS, Atomic Design, Prismic CMS, Jest, Storybook
+**Front-end:** NextJS , Tailwind CSS, Atomic Design, Jest, Storybook
+**Back-end:** Prismic CMS
 
